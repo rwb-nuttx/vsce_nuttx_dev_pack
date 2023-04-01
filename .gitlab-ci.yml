@@ -1,8 +1,0 @@
-image: node:12-buster
-
-deploy:
-  only:
-    - tags
-  script:
-    - npm install @vscode/vsce --save-dev
-    - npm run deploy

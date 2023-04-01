@@ -23,5 +23,9 @@
     "NuttXDevPack:",
     "luveti.kconfig",
     "ms-vscode.makefile-tools"
-  ]
+  ],
+  "dependencies": {
+    "@fabiospampinato/bump": "^2.1.2",
+    "@vscode/vsce": "^2.18.0"
+  }
 }
