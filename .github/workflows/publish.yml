@@ -16,11 +16,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Prepare
-        run: npm install @vscode/vsce --save-dev
+      - name: prepare
+        run: npm install -g @vscode/vsce
       - name: build
         run: vsce package
       - name: Publish
         run: npm run deploy
         env:
-          VSCE_PAT: ${{ secrets.VSCODE_MARKETPLACE_TOKEN }}
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
