@@ -15,14 +15,9 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "Extensions",
-    "installed",
-    "on",
-    "Dev",
-    "Container:",
-    "NuttXDevPack:",
     "luveti.kconfig",
-    "ms-vscode.makefile-tools"
+    "ms-vscode.makefile-tools",
+    "alefragnani.bookmarks"
   ],
   "dependencies": {
     "@fabiospampinato/bump": "^2.1.2",
