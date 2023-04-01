@@ -9,10 +9,16 @@ on:
     types:
     - created
 
-- name: Publish
-  if: startsWith(github.ref, 'refs/tags/')
-  run: 
-  - npm install @vscode/vsce --save-dev
-  - npm run deploy
-  env:
-    VSCE_PAT: ${{ secrets.VSCE_PAT }}
+jobs:
+  Prepare:
+    name: Prepare
+    runs-on: node:12-buster
+    steps:
+      - name: Prepare
+        run: |
+          npm install @vscode/vsce --save-dev
+      - name: Publish
+        run: |
+          npm run deploy
+      env:
+        VSCE_PAT: ${{ secrets.VSCE_PAT }}
