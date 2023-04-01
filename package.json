@@ -1,0 +1,23 @@
+{
+  "name": "nuttx-dev-pack",
+  "displayName": "NuttX Dev Pack",
+  "description": "VS Code extension pack for NuttX developper.",
+  "repository": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "Extensions", 
+    "installed", 
+    "on", 
+    "Dev", 
+    "Container:", 
+    "NuttXDevPack:", 
+    "luveti.kconfig", 
+    "ms-vscode.makefile-tools"
+  ]
+}

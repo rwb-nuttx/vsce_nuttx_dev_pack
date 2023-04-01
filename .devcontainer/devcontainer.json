@@ -1,0 +1,6 @@
+{
+    "name": "NuttXDevPack",
+    "build": {"dockerfile": "Dockerfile"},
+    "runArgs": ["--name", "NuttXDevPack"]
+  }
+  
