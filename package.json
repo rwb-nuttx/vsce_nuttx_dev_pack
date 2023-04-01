@@ -17,6 +17,7 @@
   "extensionPack": [
     "luveti.kconfig",
     "ms-vscode.makefile-tools",
+    "Chouzz.vscode-better-align",
     "alefragnani.bookmarks"
   ],
   "dependencies": {
