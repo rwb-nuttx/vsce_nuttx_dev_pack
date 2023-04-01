@@ -1,5 +1,7 @@
 # nuttx-dev-pack README
 
+https://marketplace.visualstudio.com/manage/publishers/nuttx
+
 ## Working with Markdown
 
 You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
