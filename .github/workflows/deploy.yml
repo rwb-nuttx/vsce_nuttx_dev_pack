@@ -1,24 +1,24 @@
-name: Publish the vs code extension
-run-name: ${{ github.actor }} is running this GitHub Actions 🚀
+name: Publish
 
 on:
   push:
-    branches:
-    - master
-  release:
-    types:
-    - created
+    tags:
+      - "*"
 
 jobs:
-  Prepare:
-    name: Prepare
-    runs-on: node:12-buster
+  build:
+    name: build
+    runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Prepare
-        run: |
-          npm install @vscode/vsce --save-dev
+        run: npm install @vscode/vsce --save-dev
+      - name: build
+        run: vsce package
       - name: Publish
-        run: |
-          npm run deploy
-      env:
-        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npm run deploy
+        env:
+          VSCE_PAT: ${{ secrets.VSCODE_MARKETPLACE_TOKEN }}
