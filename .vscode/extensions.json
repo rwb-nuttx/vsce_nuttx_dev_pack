@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "fabiospampinato.vscode-bump"
+        "fabiospampinato.vscode-bump",
+        "alefragnani.bookmarks"
     ]
 }
