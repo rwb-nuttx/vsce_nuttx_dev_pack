@@ -21,6 +21,6 @@ jobs:
       - name: Build extension
         run: npx vsce package
       - name: Publish extension
-        run: npx vsce -p $VSCE_PAT
+        run: npx vsce publish -p $VSCE_PAT
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
