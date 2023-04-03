@@ -17,10 +17,15 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
 		vscode.window.showInformationMessage('NuttX Dev Pack run!');
+		const configuration = vscode.workspace.getConfiguration("editor");
+		configuration.update("fontSize", 16, vscode.ConfigurationTarget.Global).then(() => {
+			// take action here
+			vscode.window.showInformationMessage('Update configuration successfully');
+		});
 	});
 
 	context.subscriptions.push(disposable);
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
