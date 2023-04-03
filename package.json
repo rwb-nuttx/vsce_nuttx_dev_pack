@@ -2,11 +2,15 @@
   "name": "nuttx-dev-pack",
   "displayName": "NuttX Dev Pack",
   "description": "VS Code extension pack for NuttX developper.",
-  "repository": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack"
+  },
   "publisher": "NuttX",
   "version": "0.1.1",
   "scripts": {
     "build": "npx vsce package",
+    "lint": "eslint .",
     "publish": "npx vsce publish"
   },
   "engines": {
@@ -15,14 +19,29 @@
   "categories": [
     "Extension Packs"
   ],
+  "activationEvents": [
+		"onCommand:nuttx-dev-pack.run"
+	],
+  "main": "./extension.js",
   "extensionPack": [
     "luveti.kconfig",
     "ms-vscode.makefile-tools",
     "Chouzz.vscode-better-align",
     "alefragnani.bookmarks"
   ],
-  "dependencies": {
+  "contributes": {
+		"commands": [
+			{
+				"command": "vscode-platform-specific-sample.run",
+				"title": "Get Ripgrep version"
+			}
+		]
+	},
+  "devDependencies": {
     "@fabiospampinato/bump": "^2.1.2",
     "@vscode/vsce": "^2.18.0"
-  }
+  },
+	"dependencies": {
+		"vscode-ripgrep": "^1.12.0"
+	}
 }
