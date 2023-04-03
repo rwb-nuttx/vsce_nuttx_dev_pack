@@ -1,3 +1,9 @@
+### Version 0.1.1
+- udpate
+- try to fix gh action
+- go on
+- [fix] minor update for dev env
+
 ### Version 0.1.0
 - add base function
 - add more base function

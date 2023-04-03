@@ -4,7 +4,7 @@
   "description": "VS Code extension pack for NuttX developper.",
   "repository": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack",
   "publisher": "NuttX",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "build": "npx vsce package",
     "publish": "npx vsce publish"
