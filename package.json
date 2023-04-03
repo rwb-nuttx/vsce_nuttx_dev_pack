@@ -7,10 +7,12 @@
     "url": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack"
   },
   "publisher": "NuttX",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
     "build": "npx vsce package",
-    "lint": "eslint .",
+    "lint": "eslint src --ext ts",
     "publish": "npx vsce publish"
   },
   "engines": {
@@ -19,10 +21,7 @@
   "categories": [
     "Extension Packs"
   ],
-  "activationEvents": [
-		"onCommand:nuttx-dev-pack.run"
-	],
-  "main": "./extension.js",
+  "main": "./out/extension.js",
   "extensionPack": [
     "luveti.kconfig",
     "ms-vscode.makefile-tools",
@@ -32,16 +31,25 @@
   "contributes": {
 		"commands": [
 			{
-				"command": "vscode-platform-specific-sample.run",
-				"title": "Get Ripgrep version"
+				"command": "nuttx-dev-pack.run",
+				"title": "NuttX Dev Pack Run"
 			}
 		]
 	},
   "devDependencies": {
+    "@vscode/vsce": "^2.18.0",
+    "@types/vscode": "^1.77.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "@fabiospampinato/bump": "^2.1.2",
-    "@vscode/vsce": "^2.18.0"
-  },
+    "eslint": "^8.36.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5"
+    },
 	"dependencies": {
-		"vscode-ripgrep": "^1.12.0"
 	}
 }

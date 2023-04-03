@@ -1,3 +1,7 @@
+### Version 0.1.2
+- [minor] update dev env related setup
+- [other] minor update
+
 ### Version 0.1.1
 - udpate
 - try to fix gh action
