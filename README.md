@@ -17,3 +17,5 @@ https://marketplace.visualstudio.com/manage/publishers/nuttx
   - ![vscode-bookmarks-logo-readme.png (640×230)](https://raw.githubusercontent.com/alefragnani/vscode-bookmarks/master/images/vscode-bookmarks-logo-readme.png)[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.bookmarks) 
 
 - Make *.defs default to makefile language mode
+
+![](doc/makefile.png)
