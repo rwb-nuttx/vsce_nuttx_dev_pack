@@ -6,7 +6,8 @@
   "publisher": "NuttX",
   "version": "0.1.0",
   "scripts": {
-    "deploy": "vsce publish"
+    "build": "npx vsce package",
+    "publish": "npx vsce publish"
   },
   "engines": {
     "vscode": "^1.77.0"

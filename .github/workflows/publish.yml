@@ -16,11 +16,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: prepare
+      - name: Install dependencies
         run: npm install
-      - name: build
-        run: vsce package
-      - name: Publish
-        run: npm run deploy
+      - name: Build extension
+        run: npx vsce package
+      - name: Publish extension
+        run: npx vsce -p $VSCE_PAT
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
