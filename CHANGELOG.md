@@ -1,3 +1,11 @@
+### Version 0.1.3
+- [other] make the extension can work in VS Code IDE
+- update
+- [Other] minor update
+- [Other] for picture
+- [Other] Make picture in readme work.
+- [feat] make default configuration more useful
+
 ### Version 0.1.2
 - [minor] update dev env related setup
 - [other] minor update
