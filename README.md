@@ -7,6 +7,11 @@ This pack just want to make nuttx developper's work easier. Build tools for ours
 https://marketplace.visualstudio.com/manage/publishers/nuttx
 
 
+# Usage
+
+- Search NuttX Dev Pack in extension marketplace and install it
+- Use command palette to run "nuttx-dev-pack.run", the extension will do things for you to develop NuttX easier.
+
 # Feature
 
 
@@ -20,4 +25,5 @@ https://marketplace.visualstudio.com/manage/publishers/nuttx
 
 ![](doc/Makefile.png)
 
+- Enable git signoff by default
 - Other ……

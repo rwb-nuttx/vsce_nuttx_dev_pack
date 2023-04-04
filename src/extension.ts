@@ -17,11 +17,28 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
 		vscode.window.showInformationMessage('NuttX Dev Pack run!');
-		const configuration = vscode.workspace.getConfiguration("editor");
-		configuration.update("fontSize", 16, vscode.ConfigurationTarget.Global).then(() => {
-			// take action here
-			vscode.window.showInformationMessage('Update configuration successfully');
-		});
+		// const configuration = vscode.workspace.getConfiguration("editor");
+		// configuration.update("fontSize", 16, false).then(() => {
+		// 	// take action here
+		// 	vscode.window.showInformationMessage('Update configuration successfully');
+		// });
+		if (vscode.workspace.workspaceFolders) {
+			const folder = vscode.workspace.workspaceFolders[0];
+			const setting_git = vscode.workspace.getConfiguration("git", folder.uri);
+			setting_git.update("alwaysSignOff", true, vscode.ConfigurationTarget.WorkspaceFolder).then(() => {
+				// take action here
+				// vscode.window.showInformationMessage('Update configuration successfully');
+			});
+            const setting_files = vscode.workspace.getConfiguration("", folder.uri);
+            const associations = setting_files.get('files.associations') as { [key: string]: string };
+            associations['*.defs'] = 'makefile';
+            console.log(associations);
+            setting_files.update("files.associations", associations, vscode.ConfigurationTarget.Workspace).then(() => {
+				// take action here
+				vscode.window.showInformationMessage('Update configuration successfully');
+			});
+
+		}
 	});
 
 	context.subscriptions.push(disposable);

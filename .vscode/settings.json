@@ -3,5 +3,8 @@
         "activityBar.background": "#2E156B",
         "titleBar.activeBackground": "#401D96",
         "titleBar.activeForeground": "#FCFBFE"
+    },
+    "files.associations": {
+        "*.defs": "makefile"
     }
 }
