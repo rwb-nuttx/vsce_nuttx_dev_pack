@@ -1,6 +1,10 @@
 {
-    "name": "NuttXDevPack",
-    "build": {"dockerfile": "Dockerfile"},
-    "runArgs": ["--name", "NuttXDevPack"]
-  }
-  
+  "name": "NuttXDevPack",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "--name",
+    "NuttXDevPack"
+  ]
+}

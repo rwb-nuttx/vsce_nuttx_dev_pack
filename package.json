@@ -29,13 +29,19 @@
     "alefragnani.bookmarks"
   ],
   "contributes": {
-		"commands": [
-			{
-				"command": "nuttx-dev-pack.run",
-				"title": "NuttX Dev Pack Run"
-			}
-		]
-	},
+    "commands": [
+      {
+        "command": "nuttx-dev-pack.run",
+        "title": "NuttX Dev Pack Run"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/python.code-snippets"
+      }
+    ]
+  },
   "devDependencies": {
     "@vscode/vsce": "^2.18.0",
     "@types/vscode": "^1.77.0",
@@ -49,7 +55,6 @@
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
     "typescript": "^4.9.5"
-    },
-	"dependencies": {
-	}
+  },
+  "dependencies": {}
 }

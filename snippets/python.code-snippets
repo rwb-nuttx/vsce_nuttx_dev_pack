@@ -1,0 +1,20 @@
+{
+    "log变量": {
+		"scope": "python",
+		"prefix": "log",
+		"body": [
+			"logging.warning(f'${1:var} = {$1}')",
+			"$0"
+		],
+		"description": ""
+	},
+    "print变量": {
+		"scope": "python",
+		"prefix": "print",
+		"body": [
+			"print(f'${1:var} = {$1}')",
+			"$0"
+		],
+		"description": ""
+	}
+}
