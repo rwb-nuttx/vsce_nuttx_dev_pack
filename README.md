@@ -4,20 +4,43 @@
 
 This pack just want to make nuttx developper's work easier. Build tools for ourselves. Welcome any comment.
 
-https://marketplace.visualstudio.com/manage/publishers/nuttx
+致力于改善NuttX相关开发体验，欢迎共建。
 
+This tool is not officially operated by the NuttX team.
 
-# Feature
+本工具非NuttX团队官方运营。
 
+# Installation 安装方法
 
-- Include: 
-  - [kconfig](https://marketplace.visualstudio.com/items?itemName=luveti.kconfig) 
-  - ![Microsoft.VisualStudio.Services.Icons.Default (128×128)](https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/makefile-tools/0.6.0/1661545673702/Microsoft.VisualStudio.Services.Icons.Default)[Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)  
-  - ![Microsoft.VisualStudio.Services.Icons.Default (128×128)](https://chouzz.gallerycdn.vsassets.io/extensions/chouzz/vscode-better-align/1.4.1/1675781516280/Microsoft.VisualStudio.Services.Icons.Default) [Better Align](https://marketplace.visualstudio.com/items?itemName=Chouzz.vscode-better-align) 
-  - ![vscode-bookmarks-logo-readme.png (640×230)](https://raw.githubusercontent.com/alefragnani/vscode-bookmarks/master/images/vscode-bookmarks-logo-readme.png)[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.bookmarks) 
+- Search NuttX Dev Pack in extension marketplace and install it
+- Use command palette to run "nuttx-dev-pack.run", the extension will do things for you to develop NuttX easier.
 
+# Feature 功能
+
+## Care about Makefile 优化 Makefile 相关体验
+
+- Makefile support, 基本 Makefile 功能开发支持，fucntion provided by [Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)  
 - By default, only Makefile is in makefile language mode. Make *.defs default to makefile language mode also.
+- 默认增加 .defs 后缀文件也以 makefile 的模式打开
 
 ![](doc/Makefile.png)
 
+
+## Care about Kconfig 优化 Kconfig 相关体验
+
+- Highlight Kconfig file, 高亮显示 Kconfig 文件，fucntion provided by [kconfig](https://marketplace.visualstudio.com/items?itemName=luveti.kconfig) 
+
+## Care about git 优化 Git 相关体验
+
+- Enable git signoff by default in workspace，默认在 VS Code 的 Workspace 范围内开启 git.alwaysSignOff 开关
+
+## Care about python to develop tools, 优化 Python 相关体验方便开发工具
+
+- Provide some snippets，添加部分 Python 代码 Snippets
+
+## Other
+- Align related
+  - [Better Align](https://marketplace.visualstudio.com/items?itemName=Chouzz.vscode-better-align) 
+- Bookmarks related
+  - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.bookmarks) 
 - Other ……
