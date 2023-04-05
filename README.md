@@ -4,11 +4,11 @@
 
 This pack just want to make nuttx developper's work easier. Build tools for ourselves. Welcome any comment.
 
-致力于改善NuttX相关开发体验，欢迎共建。
+致力于改善 NuttX 相关开发体验，欢迎共建。
 
 This tool is not officially operated by the NuttX team.
 
-本工具非NuttX团队官方运营。
+本工具非 NuttX 团队官方运营。
 
 # Installation 安装方法
 

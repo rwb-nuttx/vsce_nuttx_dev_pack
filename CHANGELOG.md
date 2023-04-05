@@ -1,11 +1,13 @@
 ### Version 0.1.4
 
+- add more function
+
 ### Version 0.1.3
 - [other] make the extension can work in VS Code IDE
 - update
-- [Other] minor update
-- [Other] for picture
-- [Other] Make picture in readme work.
+- [other] minor update
+- [other] for picture
+- [other] Make picture in readme work.
 - [feat] make default configuration more useful
 
 ### Version 0.1.2
