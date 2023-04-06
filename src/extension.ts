@@ -29,19 +29,27 @@ export function activate(context: vscode.ExtensionContext) {
 				// take action here
 				// vscode.window.showInformationMessage('Update configuration successfully');
 			});
-            const setting_files = vscode.workspace.getConfiguration("", folder.uri);
-            const associations = setting_files.get('files.associations') as { [key: string]: string };
-            associations['*.defs'] = 'makefile';
-            console.log(associations);
-            setting_files.update("files.associations", associations, vscode.ConfigurationTarget.Workspace).then(() => {
+			const setting_files = vscode.workspace.getConfiguration("", folder.uri);
+			const associations = setting_files.get('files.associations') as { [key: string]: string };
+			associations['*.defs'] = 'makefile';
+			console.log(associations);
+			setting_files.update("files.associations", associations, vscode.ConfigurationTarget.Workspace).then(() => {
 				// take action here
 				vscode.window.showInformationMessage('Update configuration successfully');
 			});
 
 		}
 	});
-
-	context.subscriptions.push(disposable);
+	let disposable_sort_align = vscode.commands.registerCommand('nuttx-dev-pack.align_sort', async () => {
+		try {
+			await vscode.commands.executeCommand('vscode-better-align.align');
+			await vscode.commands.executeCommand('editor.action.sortLinesAscending');
+			// vscode.window.showInformationMessage('Commands executed successfully!');
+		} catch (error) {
+			vscode.window.showErrorMessage(`Failed to execute commands: ${error}`);
+		}
+	});
+	context.subscriptions.push(disposable, disposable_sort_align);
 }
 
 // This method is called when your extension is deactivated

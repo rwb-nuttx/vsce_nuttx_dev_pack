@@ -33,6 +33,17 @@
       {
         "command": "nuttx-dev-pack.run",
         "title": "NuttX Dev Pack Run"
+      },
+      {
+				"command": "nuttx-dev-pack.align_sort",
+				"title": "NuttX Dev Pack align and sort codes"
+			}
+    ],
+    "keybindings": [
+      {
+        "command": "nuttx-dev-pack.align_sort",
+        "key": "ctrl+alt+a",
+        "when": "editorTextFocus"
       }
     ],
     "snippets": [

@@ -25,6 +25,9 @@ This tool is not officially operated by the NuttX team.
 
 ![](doc/Makefile.png)
 
+- better align and sort lines. Hotkey: Ctrl+Alt+A or command: nuttx-dev-pack.align_sort. 快速对齐和排序代码
+
+![](doc/align_sort.png)
 
 ## Care about Kconfig 优化 Kconfig 相关体验
 
