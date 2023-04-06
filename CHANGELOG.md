@@ -1,3 +1,7 @@
+### Version 0.1.5
+- [doc] minor update
+- [feat] add align and sort support in makefile
+
 ### Version 0.1.4
 
 - add more function
