@@ -1,3 +1,6 @@
+### Version 0.1.6
+- [feat] support cpp develop
+
 ### Version 0.1.5
 - [doc] minor update
 - [feat] add align and sort support in makefile
