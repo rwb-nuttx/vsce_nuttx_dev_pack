@@ -19,7 +19,7 @@ This tool is not officially operated by the NuttX team.
 
 ## Care about Makefile 优化 Makefile 相关体验
 
-- Makefile support, 基本 Makefile 功能开发支持，fucntion provided by [Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)  
+- Makefile support, 基本 Makefile 功能开发支持，function provided by [Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)  
 - By default, only Makefile is in makefile language mode. Make *.defs default to makefile language mode also.
 - 默认增加 .defs 后缀文件也以 makefile 的模式打开
 
@@ -31,7 +31,7 @@ This tool is not officially operated by the NuttX team.
 
 ## Care about Kconfig 优化 Kconfig 相关体验
 
-- Highlight Kconfig file, 高亮显示 Kconfig 文件，fucntion provided by [kconfig](https://marketplace.visualstudio.com/items?itemName=luveti.kconfig) 
+- Highlight Kconfig file, 高亮显示 Kconfig 文件，function provided by [kconfig](https://marketplace.visualstudio.com/items?itemName=luveti.kconfig) 
 
 ## Care about git 优化 Git 相关体验
 
@@ -39,7 +39,11 @@ This tool is not officially operated by the NuttX team.
 
 ## Care about python to develop tools, 优化 Python 相关体验方便开发工具
 
-- Provide some snippets，添加部分 Python 代码 Snippets
+- Provide some python snippets，添加部分 Python 代码 Snippets
+
+## Care about cpp, 优化 cpp 相关体验
+
+- Provide some cpp snippets，添加部分 cpp 代码 Snippets
 
 ## Other
 - Align related

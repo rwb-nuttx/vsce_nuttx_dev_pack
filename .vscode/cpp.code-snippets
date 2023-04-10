@@ -1,0 +1,26 @@
+{
+	"Surround cpp code with ifndef": {
+		"scope": "cpp",
+		"prefix": "#if",
+		"body": [
+			"#ifndef ${1:__DEFINITION__}",
+			"$2",
+			"  ${TM_SELECTED_TEXT}",
+			"",
+			"#endif"
+		],
+		"description": "Surround cpp code with ifndef"
+	},
+	"Surround cpp code with ifdef": {
+		"scope": "cpp",
+		"prefix": "#if",
+		"body": [
+			"#ifdef ${1:__DEFINITION__}",
+			"$2",
+			"  ${TM_SELECTED_TEXT}",
+			"",
+			"#endif"
+		],
+		"description": "Surround cpp code with ifdef"
+	}
+}
