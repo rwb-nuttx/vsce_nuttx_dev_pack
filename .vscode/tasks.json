@@ -6,7 +6,7 @@
         {
             "label": "提交tag触发发布",
             "type": "shell",
-            "command": "git push origin --tag",
+            "command": "bump patch && git push origin --all",
             "problemMatcher": []
         }
     ]
