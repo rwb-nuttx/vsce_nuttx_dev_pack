@@ -2,6 +2,7 @@
   "name": "nuttx-dev-pack",
   "displayName": "NuttX Dev Pack",
   "description": "VS Code extension pack for NuttX developper.",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack"
