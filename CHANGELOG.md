@@ -1,3 +1,7 @@
+### Version 0.1.7
+- [feat] minor update for dev setup
+- add icon
+
 ### Version 0.1.6
 - [feat] support cpp develop
 

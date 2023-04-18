@@ -8,7 +8,7 @@
     "url": "https://github.com/rwb-nuttx/vsce_nuttx_dev_pack"
   },
   "publisher": "NuttX",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
