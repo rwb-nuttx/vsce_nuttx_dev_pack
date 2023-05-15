@@ -16,4 +16,5 @@ RUN adduser ${user} sudo
 RUN echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER ${user}
+ENV NVM_DIR="/home/${user}/.nvm"
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash

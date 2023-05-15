@@ -2,6 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "配置开发环境",
+            "type": "shell",
+            "command": "chmod a+x scripts/bootstrap.sh && ./scripts/bootstrap.sh",
+            "problemMatcher": []
+        },
+        {
             "label": "提交tag触发发布",
             "type": "shell",
             "command": "bump patch && git push origin --all && git push origin --tags",
