@@ -1,3 +1,7 @@
+### Version 0.1.8
+- [feat] add base support for shell script. 增加shell的初步支持
+- [other] minor update
+
 ### Version 0.1.7
 - [feat] minor update for dev setup
 - add icon
