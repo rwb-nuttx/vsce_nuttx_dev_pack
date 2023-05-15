@@ -17,7 +17,7 @@
     "publish": "npx vsce publish"
   },
   "engines": {
-    "vscode": "^1.77.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Extension Packs"
@@ -27,6 +27,7 @@
     "luveti.kconfig",
     "ms-vscode.makefile-tools",
     "Chouzz.vscode-better-align",
+    "timonwong.shellcheck",
     "alefragnani.bookmarks"
   ],
   "contributes": {

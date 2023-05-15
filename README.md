@@ -41,6 +41,10 @@ This tool is not officially operated by the NuttX team.
 
 - Provide some python snippets，添加部分 Python 代码 Snippets
 
+## Care about shell, 优化 shell 相关体验
+
+- provide shellcheck linter, 添加 shellcheck 的代码静态检查
+
 ## Care about cpp, 优化 cpp 相关体验
 
 - Provide some cpp snippets，添加部分 cpp 代码 Snippets
