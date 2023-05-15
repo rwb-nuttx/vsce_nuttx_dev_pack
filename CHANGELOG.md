@@ -1,3 +1,6 @@
+### Version 0.1.10
+- [other] minor update
+
 ### Version 0.1.9
 - [fix] update version for bug when build package [Manifest still requires `activationEvents`, but shouldn't anymore · Issue #808 · microsoft/vscode-vsce](https://github.com/microsoft/vscode-vsce/issues/808)
 
